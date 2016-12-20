@@ -1,0 +1,23 @@
+{
+  "name": "angular-stack-trace",
+  "version":"1.0.0",
+  "description": "Log the JavaScript error to the server",
+  "main": [
+    "src/stack-trace.js"
+  ],
+  "authors": [
+    "Mahmut Duva"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "log",
+    "stack trace"
+  ],
+  "dependencies": {
+  },
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ]
+}
