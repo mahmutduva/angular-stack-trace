@@ -23,7 +23,7 @@ function ErrorLogService ($log, $window, StackTraceService, ENV, $cookies) {
     try {
       var errorMessage = exception.toString()
       var stackTrace = StackTraceService.print({ e: exception })
-      var stackTraceUrl = ENV.apiCockpit.concat(ENV.stackTracePath || '/fronend/log')
+      var stackTraceUrl = ENV.apiCockpit.concat(ENV.stackTracePath || '/frontend/log')
 
       $.ajax({
         type: 'POST',
