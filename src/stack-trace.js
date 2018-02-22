@@ -31,12 +31,12 @@ function ErrorLogService ($log, $window, StackTraceService, ENV, $cookies) {
         headers: {
           'Authorization': 'Bearer' + $cookies.get('_token')
         },
-        data: angular.toJson({
+        data: {
           errorUrl: $window.location.href,
           errorMessage: errorMessage,
           stackTrace: stackTrace,
           cause: (cause || '')
-        })
+        }
       })
     } catch (loggingError) {
       $log.warn('Error logging failed')
